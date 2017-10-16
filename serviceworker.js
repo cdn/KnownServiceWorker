@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v1.1.4::';
+const version = 'v1.1.5::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -34,6 +34,7 @@ function updateStaticCache() {
                 '/css/default.css',
                 '/css/defaultb3.css',
                 '/file/9db27b4368a9d87f98d7cdc750434c9a/thumb.jpg',
+                '/gfx/robots/aleph_404.png',
 //                '/includes/css/print.css',
                 '/offline'
             ]);
