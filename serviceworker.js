@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v1.1.5::';
+const version = 'v1.1.6::';
 const staticCacheName = version + 'static';
 const pagesCacheName = 'pages';
 const imagesCacheName = 'images';
@@ -31,6 +31,8 @@ function updateStaticCache() {
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
                 '/js/default.js',
+                '/external/jquery/jquery.min.js',
+                '/external/jquery-timeago/jquery.timeago.js',
                 '/css/default.css',
                 '/css/defaultb3.css',
                 '/file/9db27b4368a9d87f98d7cdc750434c9a/thumb.jpg',
