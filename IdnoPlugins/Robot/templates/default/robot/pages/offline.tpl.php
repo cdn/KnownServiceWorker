@@ -40,8 +40,8 @@ caches.open('pages')
           if(data.url.indexOf('offline') == -1)
             markup += `
 <dt><a href="${ data.url }">${ data.title }</a></dt>
-<dd><p>${ data.description }&hellip;</p></dd>
-<!-- <p class="meta">${ data.published }</p></dd> -->
+<dd><p>${ data.description }&hellip;</p><!-- </dd> -->
+<p class="meta"><time class="dt-published" datetime="${ data.published }" title="${ data.time_tip }">${ data.time_tip }</time></p></dd>
 `;
         });
         if(browsingHistory.length>0)
