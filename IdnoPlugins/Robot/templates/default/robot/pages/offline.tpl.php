@@ -31,10 +31,7 @@ caches.open('pages')
             }
         });
         browsingHistory.sort( (a,b) => {
-            da = new Date(a.published);
-            db = new Date(b.published);
-            return db.getTime() - da.getTime();
-            return b.timestamp - a.timestamp; // would not need above if actually stored a timestamp
+            return b.timestamp - a.timestamp;
         });
         let markup = '';
         if(browsingHistory.length>0)
@@ -43,8 +40,8 @@ caches.open('pages')
           if(data.url.indexOf('offline') == -1)
             markup += `
 <dt><a href="${ data.url }">${ data.title }</a></dt>
-<dd><p>${ data.description }&hellip;</p><!-- </dd> title="${ data.time_tip }" -->
-<p class="meta"><time class="dt-published" datetime="${ data.published }">${ data.time_tip }</time></p></dd>
+<dd><p>${ data.description }&hellip;</p><!-- </dd> -->
+<p class="meta"><time class="dt-published" datetime="${ data.datetime }">${ data.published }</time></p></dd>
 `;
         });
         if(browsingHistory.length>0)
