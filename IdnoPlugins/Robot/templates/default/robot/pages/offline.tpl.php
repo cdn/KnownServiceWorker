@@ -50,4 +50,28 @@ caches.open('pages')
         container.insertAdjacentHTML('beforeend', markup);
     })
 });
+
+// A little embellishment, check for on/off–line-ness of client
+  window.addEventListener('load', function() {
+
+  // navigator.onLine
+
+    if(navigator.onLine) {
+      // it’s not you it’s the squirrel at this end
+      console.log('Squirrel!');
+    }
+
+    window.addEventListener('offline', function() {
+      // navigator.onLine : false
+      // it’s you, though it might be the internet at large
+      console.log('You’re offline.');
+    });
+
+    window.addEventListener('online', function() {
+      // navigator.onLine : true
+      console.log('Connection restored!');
+    });
+
+  });
+
 </script>
