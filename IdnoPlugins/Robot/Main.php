@@ -18,7 +18,7 @@ namespace IdnoPlugins\Robot {
             \Idno\Core\Idno::site()->template()->extendTemplate('entity/annotations/comment/main', 'robot/entity/anno_comm_main');
 
             // The full page route
-            \Idno\Core\Idno::site()->addPageHandler('/offline/?', '\IdnoPlugins\Robot\Pages\Offline');
+            \Idno\Core\Idno::site()->routes()->addRoute('/offline/?', '\IdnoPlugins\Robot\Pages\Offline');
 
 	}
 
