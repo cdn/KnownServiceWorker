@@ -2,13 +2,15 @@
 
 namespace IdnoPlugins\Robot {
 
-    class Main extends \Idno\Common\Plugin {
+    class Main extends \Idno\Common\Plugin
+    {
 
-	function registerPages() {
+        function registerPages()
+        {
 
-	    // Robot (serviceworker) init code
-	    \Idno\Core\Idno::site()->template()->extendTemplate('shell/footer', 'robot/shell/footer');
-	    // Service worker javascript file to be copied to site root directory
+            // Robot (serviceworker) init code
+            \Idno\Core\Idno::site()->template()->extendTemplate('shell/footer', 'robot/shell/footer');
+            // Service worker javascript file to be copied to site root directory
 
             // Need to find the slot for this post–content for localStorage of metadata for permalink URLs
             //\Idno\Core\Idno::site()->template()->extendTemplate('content/end', 'robot/content/end');
@@ -20,7 +22,7 @@ namespace IdnoPlugins\Robot {
             // The full page route
             \Idno\Core\Idno::site()->routes()->addRoute('/offline/?', '\IdnoPlugins\Robot\Pages\Offline');
 
-	}
+        }
 
     }
 
