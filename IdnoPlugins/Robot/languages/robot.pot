@@ -1,3 +1,7 @@
+#: Pages/Offline.php:12
+msgid "Offline page"
+msgstr ""
+
 #: templates/default/robot/pages/offline.tpl.php:6
 msgid "Offline"
 msgstr ""
