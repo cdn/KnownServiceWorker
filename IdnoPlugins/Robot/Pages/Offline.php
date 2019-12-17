@@ -9,7 +9,7 @@ namespace IdnoPlugins\Robot\Pages {
         {
             $t = \Idno\Core\Idno::site()->template();
             $t->body  = $t->draw('robot/pages/offline');
-            $t->title = 'Offline page';
+            $t->title = \Idno\Core\Idno::site()->language()->_('Offline page');
             $t->drawPage();
         }
 
