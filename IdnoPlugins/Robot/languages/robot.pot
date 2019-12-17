@@ -1,0 +1,17 @@
+#: templates/default/robot/pages/offline.tpl.php:6
+msgid "Offline"
+msgstr ""
+
+#: templates/default/robot/pages/offline.tpl.php:8
+#: ./templates/default/pages/404.tpl.php:7
+msgid "Whatever you were looking for, it's not here. It might have been moved, deleted, or it doesn't exist. Or the robots ate it. That's always a possibility too."
+msgstr ""
+
+#: templates/default/robot/pages/offline.tpl.php:9
+#: ./templates/default/pages/404.tpl.php:8
+msgid "Maybe you'll find something interesting if you head back to the <a href=\"%s\">%s homepage</a>."
+msgstr ""
+
+#: templates/default/robot/pages/offline.tpl.php:39
+msgid "Other things to look at:"
+msgstr ""

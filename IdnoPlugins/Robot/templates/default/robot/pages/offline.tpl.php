@@ -3,10 +3,10 @@
     <div class="row" style="margin-bottom: 2em; margin-top: 6em">
         <div class="col-md-offset-1 col-md-5">
             <h1 class="p-name" style="margin-bottom: 2em;">
-                Offline.
+                <?php echo \Idno\Core\Idno::site()->language()->_('Offline.'); ?>
             </h1>
-            <p>Whatever you were looking for, it's not here at the moment. It might have been moved, deleted, or it doesn't exist. Or the robots ate it. That's always a possibility too.</p>
-            <p>Maybe you'll find something interesting if you head back to the <a href="<?=\Idno\Core\Idno::site()->config()->getDisplayURL()?>"><?=\Idno\Core\Idno::site()->config()->title?> homepage</a>.
+            <p><?php echo \Idno\Core\Idno::site()->language()->_("Whatever you were looking for, it's not here. It might have been moved, deleted, or it doesn't exist. Or the robots ate it. That's always a possibility too."); ?></p>
+            <p><?php echo \Idno\Core\Idno::site()->language()->_("Maybe you'll find something interesting if you head back to the <a href=\"%s\">%s homepage</a>.", [\Idno\Core\Idno::site()->config()->getDisplayURL(), \Idno\Core\Idno::site()->config()->title]); ?>
             </p>
             <div id="history">
             </div>
@@ -35,7 +35,9 @@ caches.open('pages')
         });
         let markup = '';
         if(browsingHistory.length>0)
-            markup += '<p>Other things to look at:</p><dl>';
+            markup += '<p><?php
+     echo \Idno\Core\Idno::site()->language->_('Other things to look at:');
+ ?></p><dl>';
         browsingHistory.forEach( data => {
           if(data.url.indexOf('offline') == -1)
             markup += `

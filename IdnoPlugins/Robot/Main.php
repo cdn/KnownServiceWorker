@@ -24,6 +24,15 @@ namespace IdnoPlugins\Robot {
 
         }
 
+        function registerTranslations()
+        {
+
+            \Idno\Core\Idno::site()->language()->register(
+                new \Idno\Core\GetTextTranslation(
+                    'robot', dirname(__FILE__) . '/languages/'
+                )
+            );
+        }
     }
 
 }
