@@ -22,13 +22,19 @@ msgstr "Hors ligne."
 
 #: templates/default/robot/pages/offline.tpl.php:8
 #: ./templates/default/pages/404.tpl.php:7
-msgid "Whatever you were looking for, it's not here. It might have been moved, deleted, or it doesn't exist. Or the robots ate it. That's always a possibility too."
-msgstr "Quoi que vous cherchiez, il n’est pas là. Il peut avoir été déplacé, supprimé, ou il n’existe pas. Ou les robots l’ont mangé. C’est toujours une possibilité aussi."
+msgid ""
+"Whatever you were looking for, it's not here. It might have been moved, "
+"deleted, or it doesn't exist. Or the robots ate it. That's always a possibility too."
+msgstr ""
+"Ce que vous venez de chercher ne se trouve pas ici. Il se peut que "
+"ça a été déplacé, effacé ou n’a jamais existé. Ou ça a été englouti par des "
+"robots. Ce qui est toujours une possibilité."
+#msgstr "Quoi que vous cherchiez, il n’est pas là. Il peut avoir été déplacé, supprimé, ou il n’existe pas. Ou les robots l’ont mangé. C’est toujours une possibilité aussi."
 
 #: templates/default/robot/pages/offline.tpl.php:9
 #: ./templates/default/pages/404.tpl.php:8
 msgid "Maybe you'll find something interesting if you head back to the <a href=\"%s\">%s homepage</a>."
-msgstr ""
+msgstr "Peut–être vous trouvez quelque chose d’intéressant en retournant sur <a href=\"%s\">la page d’accueil de %s</a>."
 
 #: templates/default/robot/pages/offline.tpl.php:39
 msgid "Other things to look at:"
