@@ -36,7 +36,7 @@ caches.open('pages')
         let markup = '';
         if(browsingHistory.length>0)
             markup += '<p><?php
-     echo \Idno\Core\Idno::site()->language->_('Other things to look at:');
+     echo \Idno\Core\Idno::site()->language()->_('Other things to look at:');
  ?></p><dl>';
         browsingHistory.forEach( data => {
           if(data.url.indexOf('offline') == -1)
